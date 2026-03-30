@@ -4,13 +4,13 @@ body {
         "cabeca cabeca cabeca"
         "braco corpo corpo"
         "perna perna perna";
-    grid-template-rows: 200px 600px 150px;
+    grid-template-rows: 200px auto 150px;
     grid-template-columns: 200px auto auto;
 }
 
 header {
     grid-area: cabeca;
-    background-color: rgb(82, 57, 39);
+    background-color: rgb(111, 136, 113);
 }
 
 aside {
@@ -25,7 +25,7 @@ main {
 
 footer {
     grid-area: perna;
-    background-color: rgb(117, 145, 170);
+    background-color: rgb(57, 87, 63);
 }
 
 .card {
@@ -46,11 +46,25 @@ footer {
 }
 
 .img_card{
-    width: 300px;
+    width: 340px;
     height: auto;
 }
 
 .texto_card{
     color: rgb(0, 0, 0);
     font-size: xx-large;
+}
+
+@media only screen and (max-width:800px ) {
+    body {
+        grid-template-areas: "cabeca"
+                             "corpo"
+                             "perna";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto 200px;                     
+    }
+    aside {
+        display: none;
+    }
+
 }
