@@ -10,7 +10,17 @@ body {
 
 header {
     grid-area: cabeca;
-    background-color: rgb(111, 136, 113);
+    background-color: rgb(166, 204, 169);
+}
+
+.header-text {
+    text-align: center;
+
+}
+
+.info-card {
+    
+
 }
 
 aside {
@@ -20,7 +30,7 @@ aside {
 
 main {
     grid-area: corpo;
-    background-color: rgb(58, 40, 23);
+    background-color: rgb(128, 98, 71);
 }
 
 footer {
